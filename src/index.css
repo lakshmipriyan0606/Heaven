@@ -11,7 +11,7 @@ body{
 @tailwind components;
 @tailwind utilities;
 
-.hero_title {
+.hero {
     animation-name: hero;
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
