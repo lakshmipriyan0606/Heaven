@@ -11,7 +11,7 @@ function hero() {
           <img src={heroimg} alt='heroimg' className="pt-32 h-[850px] md:hidden"/>
       </div>
        <div className='flex w-full md:justify-center md:items-center md:py-8'>
-       <div className='flex  flex-col w-full  md:w-[70%] mx-auto py-28  items-center justify-center '>
+       <div className='flex  flex-col w-full  md:w-[70%] mx-auto py-28  items-center justify-center hero_title '>
         <h1 className='text-[#df6951] text-xl font-bold text-center '>Best Destinations around the world</h1>
         <h2 className='text-[35px] mt-8 font-semibold text-[#181e4b] text-center'>Travel, enjoy and live</h2>
         <h2 className='text-[30px] pl-6 text-center font-semibold text-[#181e4b]'> a new and full life</h2>
