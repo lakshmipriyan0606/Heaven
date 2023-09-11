@@ -1,10 +1,13 @@
-import Nav from "./navbar"
+import Nav from "./component/navbar"
+
 
 function App() {
   return (
     <div className="App">
-       <Nav/>
-      
+       <Nav/>  
+     <div>
+
+     </div>
     </div>
   );
 }

@@ -3,7 +3,8 @@
 
 body{
     font-family: 'Poppins', sans-serif;
-    overflow-x: hidden
+    overflow-x: hidden;
+    cursor : url("./img/icons8-cursor-32.png"),auto;
 }
 
 @tailwind base;
