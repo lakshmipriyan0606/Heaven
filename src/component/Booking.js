@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import icon1 from '../img/steps/selection.svg'
 import icon2 from '../img/steps/water-sport.svg'
 import icon3 from '../img/steps/taxi.svg'
@@ -7,14 +7,18 @@ import leaficon from'../img/steps/leaf.svg'
 import sendicon from'../img/steps/send.svg'
 import mapicon from'../img/steps/map.svg'
 import buildicon from'../img/steps/building.svg'
-import hearticon from'../img/steps/heart.svg'
+import { FaHeart } from 'react-icons/fa'
 
 
 
 
 function Booking() {
+
+  const [heart,setHeart] =useState(false)
+  
+
   return (
-    <div >
+    <div id='booking' >
         <h1  className='text-[#626685] text-left pl-5 text-xl mt-10 lg:text-center lg:text-2xl' >Easy and Fast</h1>
         <h2 className='font-bold text-2xl pl-5 text-[#14183e] mt-5 lg:text-center lg:text-2xl' >Book Your Next Trip In 3 Easy Steps</h2>
      <div>
@@ -51,7 +55,7 @@ function Booking() {
              <img src={sendicon} className='bg-[#eee] p-4 rounded-full' alt='icon'/>
              <img src={mapicon} className='bg-[#eee] p-4 rounded-full' alt='icon'/>
             </div>
-            <p className='flex  ml-5 mb-5'><img src={buildicon } alt="icon"/> <span className='ml-4'>24 people going </span> <img src={hearticon} cl alt='icon' className='ml-7'/> </p>
+            <p className='flex  gap-6 items-center ml-5 mb-5'><img src={buildicon } alt="icon"/> <span className='ml-4'>24 people going </span> <FaHeart className={heart ? "text-red-600 cursor-pointer transition-all duration-200" : " cursor-pointer  transition-all duration-200"} onClick={()=>setHeart(!heart)} /> </p>
         </div>
       </div>
      </div>

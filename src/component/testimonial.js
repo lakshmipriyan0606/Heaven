@@ -14,7 +14,7 @@ function Testimonial() {
         <h2 className='font-bold text-2xl pl-5 text-[#14183e] text-left lg:text-center mt-5' >What People Say About Us.</h2>
       </div>
      <TestimonialList />
-         <div className='grid grid-cols-2  md:grid-cols-3  justify-center items-center gap-5 mx-auto'>
+         <div className='grid grid-cols-2  md:grid-cols-3  lg:grid-cols-5 justify-center items-center gap-5 mx-auto'>
             <img src={partner} alt='partnerlogo'/>
             <img src={partner2} alt='partnerlogo'/>
             <img src={partner3} alt='partnerlogo'/>

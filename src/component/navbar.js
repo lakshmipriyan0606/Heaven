@@ -13,9 +13,8 @@ import Footer from './footer'
 const Header = () => {
     let Links =[
         {name:"Service",link:"#service"},
-        {name:"Destination",link:"/"},
-        {name:"Booking",link:"/"},
-        {name:"Login",link:"/"},
+        {name:"Destination",link:"#destination"},
+        {name:"Booking",link:"#booking"},
       ];
       let [open, setOpen] =useState(false);
 
