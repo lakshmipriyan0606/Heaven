@@ -21,7 +21,7 @@ export const TestimonialList = () => {
     const currentTestimonial = testimonialdata[currentTestimonialIndex];
 
   return (
-    <div className='mx-auto transition-all duration-700'>
+    <div className='mx-auto transition-all duration-700' data-aos="zoom-out-left">
     <div className='border border-white rounded-lg shadow-2xl w-[250px] ml-[60px] md:w-[300px] h-[350px] md:h-[350px]  my-20 '>
       <div className='w-[250px] flex flex-col justify-center items-center h-[350px] md:w-[300px] md:h-[350px] relative bottom-6 right-12 border bg-white  border-white shadow-2xl rounded-lg  pt-14 pl-6  text-base  text-[#626685] '>
         <img src={currentTestimonial.image} alt='img' className='absolute shadow-2xl rounded-full bottom-[90%] md:bottom-[90%] md:right-[70%] right-[70%] w-[80px] object-cover h-[80px]' />

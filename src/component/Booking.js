@@ -46,7 +46,7 @@ function Booking() {
             </div>
         </div>
         </div>
-        <div  className='border border-white shadow-xl hover:shadow-black cursor-pointer rounded-3xl hover:shadow-md mt-5 w-9/12 md:w-7/12 lg:w-5/12 mx-auto overflow-hidden flex flex-col justify-center items-center gap-4'>
+        <div  className='border border-white shadow-xl hover:shadow-black cursor-pointer rounded-3xl hover:shadow-md mt-5 w-9/12 md:w-7/12 lg:w-5/12 mx-auto overflow-hidden flex flex-col justify-center items-center gap-4' data-aos="flip-up">
             <img src={img} alt='favouriteimg' className='w-8/12 md:w-10/12 lg:w-11/12 mx-auto mt-5 rounded-3xl'/>
             <h1 className='px-8 pt-6 text-[#5E6282] text-2xl font-semibold '>Trip to  Greece </h1>
             <p className='px-8 pt-2  text-[#5E6282] text-base font-medium'>14-29 June / by Robbin joseph </p>

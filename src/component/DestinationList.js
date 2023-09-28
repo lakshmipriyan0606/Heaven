@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const DestinationList = ({img,title,icon,days,price}) => {
   return (
-    <div>
+    <div data-aos="zoom-out-up">
       <div className="flex flex-col gap-3 border border-white cursor-pointer shadow-black rounded-2xl  shadow-sm hover:shadow-slate-950 hover:shadow-lg w-full">
         <img
           src={img}

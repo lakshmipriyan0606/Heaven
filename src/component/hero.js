@@ -1,17 +1,23 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import heroimg from '../img/hero/hero-img.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlayCircle } from '@fortawesome/free-solid-svg-icons'
+import AOS from "aos";
+import "aos/dist/aos.css" 
 
+function Hero() {
 
-function hero() {
+  useEffect(()=>{
+    AOS.init({duration:3000})
+  },[])
+
   return (
-      <div className='hero '>
+      <div className=''>
         <div>
-          <img src={heroimg} alt='heroimg' className="pt-32 h-[850px] md:hidden"/>
+          <img src={heroimg} alt='heroimg' className="pt-32 h-[850px] md:hidden" data-aos="zoom-in"/>
       </div>
        <div className='flex w-full md:justify-center md:items-center md:py-8'>
-       <div className='flex  flex-col w-full  md:w-[70%] mx-auto py-28  items-center justify-center '>
+       <div className='flex  flex-col w-full  md:w-[70%] mx-auto py-28  items-center justify-center ' data-aos="fade-up">
         <h1 className='text-[#df6951] text-xl font-bold text-center '>Best Destinations around the world</h1>
         <h2 className='text-[35px] mt-8 font-semibold text-[#181e4b] text-center'>Travel, enjoy and live</h2>
         <h2 className='text-[30px] pl-6 text-center font-semibold text-[#181e4b]'> a new and full life</h2>
@@ -19,12 +25,12 @@ function hero() {
         <button className='hover:bg-[#f1a501] mx-auto hover:text-white  mt-7 p-3 rounded-md cursor-pointer bg-white transition-all duration-1000 text-[#f1a501] border border-yellow-600' >Find Out More</button> <br/>
             <FontAwesomeIcon icon={faPlayCircle} className='mx-auto mt-10 text-5xl text-red-600' />  <span className='text-[#626685] mx-auto text-xl  '>Play Demo</span>
       </div>
-      <div>
-          <img src={heroimg} alt='heroimg' className="pt-32 md:pt-1 hidden md:block lg:block xl:block"/>
+      <div  className='mt-36'>
+          <img src={heroimg} alt='heroimg' className="pt-32 md:pt-1 hidden md:block lg:block xl:block" data-aos="fade-left"/>
       </div>
        </div>
       </div>
   )
 }
 
-export default hero
+export default Hero
